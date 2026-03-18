@@ -57,12 +57,12 @@ color: #fc313f;
 font-size: 30px;
 }
 /* styles navigation banner */
-.nav {
+nav {
 display: flex;
 margin: 3vh 1vw 0;
 justify-content: center;
 }
-.nav h1, .nav li {
+nav h1, nav li {
 font-size: clamp(1rem, 4vw, 2.5rem);
 display: inline-flex;
 justify-content: center;
@@ -114,6 +114,9 @@ background-color: #181818;
 padding-left: 5px;
 margin: 0 1vw 1vh;
 border-radius: 10px;
+}
+.center {
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
