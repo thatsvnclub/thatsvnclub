@@ -1,0 +1,10 @@
+
+<div class="blogbox">
+  <h1>News</h1>
+  <hr />
+  <div class="posts">
+{% for post in collections.post | reverse | itemLimit(5) %}
+<div class="postprelink"><p><span class="postdate">{{ page.date | postDate}}</span></div><div class="postlink"><a href="{{ post.url }}" class="blogpost">{{ post.data.title }}<span id="postsep"> - </span>{{ post.data.description }}...</a></p></div>
+{% endfor %}
+  </div>
+</div>

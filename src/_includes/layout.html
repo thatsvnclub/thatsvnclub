@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- delete this line and uncomment the line below if vnclub is added to the milkmedicine webchain -->
+    <!-- <link rel="webchain" href="https://webchain.milkmedicine.net/"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- delete this line uncomment below and set to vnclub logo when ready -->
+    <!-- <meta property="og:image" content="/img/{{ title }}/gameimage.webp"/> -->
+    <meta property="og:site_name" content="That's VN Club!"/>
+    <meta property="og:description" content="{{ description }}"/>
+    <meta name="description" content="{{ description }}"/>
+    <title>{{ title }}</title>
+    <!-- delete this line uncomment below and change fav.gif  to vnclub logo -->
+    <!-- <link rel="icon" type="image/x-icon" href="img/fav.gif"> -->
+    <link rel="stylesheet" href="{{ stylebb }}?v=0.1" type="text/css">
+  </head>
+  <body>
+    {% include "partials/nav.html" %}
+    <main>
+    {% block content %}
+    {{ content | safe }}
+    {% endblock %}
+    </main>
+  </body>
+</html>
