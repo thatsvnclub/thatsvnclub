@@ -37,7 +37,7 @@ color: #fc313f;
 text-shadow: 0 0 3px #fc313f;
 }
 h2 {
-font-size: clamp(1rem, 3vw, 1.5rem);
+font-size: clamp(1.5rem, 3.5vw, 2rem);
 font-family: constan;
 -webkit-text-stroke: 1px #181818;
 color: #fc313f;
