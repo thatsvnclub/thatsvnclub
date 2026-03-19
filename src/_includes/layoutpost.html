@@ -27,11 +27,11 @@
 {% if previousPost or nextPost %}
   <nav class="postnav" aria-label="pagination">
     {% if previousPost %}
-      <a href="{{ previousPost.url }}">🠈</a>
+      <a href="{{ previousPost.url }}">Prev</a>
     {% endif %}
     <span>&nbsp;</span>
     {% if nextPost %}
-      <a href="{{ nextPost.url }}">🠊</a>
+      <a href="{{ nextPost.url }}">Next</a>
     {% endif %}
   </nav>
   </center>
