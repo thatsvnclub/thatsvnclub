@@ -6,11 +6,29 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/img');
   eleventyConfig.addPassthroughCopy('src/css');
   eleventyConfig.addPassthroughCopy('src/css/fonts');
-  eleventyConfig.addPassthroughCopy('src/js');
   eleventyConfig.addPassthroughCopy('src/posts');
   eleventyConfig.addFilter("itemLimit", function(array, maximum) {
     return array.slice(0, maximum);
 });
+  eleventyConfig.addFilter("filterTags", (items) => {
+    const newTags = [];
+    for (let i of items) {
+		if (i[0] != 'post' && i[0] != 'posts' && i[0] != 'all') {
+        newTags.push(i);
+      }
+    }
+    return newTags;
+  });
+  eleventyConfig.addFilter("filterPostTags", (items) => {
+	const newTags = [];
+	for (let i of items) {
+		console.log(i);
+		if (i != "post") {
+			newTags.push(i);
+		}
+	}
+	return newTags.join(" ");
+  });
   eleventyConfig.addFilter("postDate", (dateObj) => {
     // Can use toLocaleString the same way we were before
     return dateObj.toLocaleString(undefined, {

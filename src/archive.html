@@ -10,9 +10,15 @@ stylebb: css/style.css
 <section class="taglist">
       <ul>
 
-      {% set orderedCollection = collections | sortObjectByKey  %}
+      {% set orderedCollection = collections | sortObjectByKey | filterTags  %}
       {%- for tag, posts in orderedCollection %}
-        <li><a href="#"><strong>{{ tag }}</strong></a> - {{ posts | length }} posts</li>
+        <li><a href="#" class="tagButton" id="{{ tag }}"><strong>{{ tag }}</strong></a> - {{ posts | length }}
+          {% if posts.length > 1%}
+          posts
+          {% else %}
+          post
+          {% endif %}
+        </li>
       {%- endfor -%}
 
       </ul>
@@ -21,9 +27,34 @@ stylebb: css/style.css
   <h1>Archive</h1>
   <ol class="archiveposts">
 {% for post in collections.post | reverse %}
-<li>
+<li class="{{post.data.tags | filterPostTags}}">
   <div class="archiveprelink"><p><span class="postdate">{{ page.date | postDate}}</span></div><div class="archivelink"><a href="{{ post.url }}" class="archivepost">{{ post.data.title }}<span id="postsep"> - </span>{{ post.data.description }}...</a></p></div>
 </li>
 {% endfor %}
   </ol>
 </section>
+<script>
+
+const tagButtons = document.querySelectorAll('.tagButton');
+const allTags = [];
+for (let i of tagButtons) {
+  allTags.push(i.id);
+    i.addEventListener('click', () => {
+      const tagName = i.id;
+      if (document.querySelector('body').classList.contains(tagName)) {
+        document.querySelector('body').classList.remove(tagName);
+      } else {
+        document.querySelector('body').classList.add(tagName);
+      }
+    });
+}
+for (let i of allTags) {
+  const style = document.createElement('style');
+  style.textContent = `
+  body.${i} li:has(#${i}) {background-color: green;}
+  body.${i} .archiveposts li:not(.${i}) {display: none;}
+  html body.${i} .archiveposts li.${i} {display: block;}
+  `;
+  document.head.appendChild(style);
+}
+</script>
