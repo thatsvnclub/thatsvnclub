@@ -50,7 +50,7 @@ eleventyConfig.addFilter('sortObjectByKey', (collection) => {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",
 		collection: {
-			name: "posts", // iterate over `collections.posts`
+			name: "post", // iterate over `collections.posts`
 			limit: 50,     // 0 means no limit
 		},
 		metadata: {
