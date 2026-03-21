@@ -7,14 +7,6 @@ outline:0;
 font-size: 20px;
 }
 
-ol {
-  list-style-type: none;
-}
-
-/* this is such a scuffed fix for making everything smaller */
-html {
-  zoom: 0.85;
-}
 /* add fonts */
 @font-face{
 font-family:atkinson;
@@ -29,33 +21,45 @@ font-family:profont;
 src: url('fonts/profont.ttf');
 }
 /* from here down is where stuff actually starts getting styled */
+/* this is such a scuffed fix for making everything smaller */
+:root {
+--clra: #fc313f;
+--clrb: #181818;
+--clrc: #1f1f1f;
+--clrd: #ded;
+}
 html {
 font-family: atkinson;
-background-color: #1f1f1f;
-color: #dedded;
+background-color: var(--clrc);
+color: var(--clrd); 
+zoom: 0.85;
 }
+ol {
+  list-style-type: none;
+}
+
 h1 {
 font-size: clamp(2rem, 4vw, 2.5rem);
 font-family: constan;
--webkit-text-stroke: 1px #181818;
-color: #fc313f;
-text-shadow: 0 0 3px #fc313f;
+-webkit-text-stroke: 1px var(--clrb);
+color: var(--clra);
+text-shadow: 0 0 3px var(--clra);
 }
 h2 {
 font-size: clamp(1.5rem, 3.5vw, 2rem);
 font-family: constan;
--webkit-text-stroke: 1px #181818;
-color: #fc313f;
-text-shadow: 0 0 3px #fc313f;
+-webkit-text-stroke: 1px var(--clrb);
+color: var(--clra);
+text-shadow: 0 0 3px var(--clra);
 }
 a {
-color: #fc313f;
+color: var(--clra);
 }
 a:hover {
-color: #ded;
+color: var(--clrd);
 }
 hr {
-border-top: 1px solid #fc313f;
+border-top: 1px solid var(--clra);
 text-align: center;
 width: 75%;
 margin: 0.5px auto;
@@ -67,7 +71,7 @@ display: inline-block;
 position: relative;
 top: -16px;
 margin-bottom: 1vh;
-color: #fc313f;
+color: var(--clra);
 font-size: 30px;
 }
 /* styles navigation banner */
@@ -84,7 +88,7 @@ margin: 1vh 2vw;
 }
 /* styles blog list on index.html */
 .blogbox {
-background-color: #181818;
+background-color: var(--clrb);
 padding-top: 5px;
 padding-left: 5px;
 padding-bottom: 5px;
@@ -124,7 +128,7 @@ opacity: .75;
 }
 #postsep {
 font-size: clamp(1.25rem, 3vw, 2.5rem);
-color: #ded;
+color: var(--clrd);
 }
 #archivelink {
   font-size: clamp(1.25rem, 3vw, 2.5rem);
@@ -135,7 +139,7 @@ color: #ded;
 }
 /* styles latest.html partial */
 .latest {
-background-color: #181818;
+background-color: var(--clrb);
 padding-left: 5px;
 margin: 0 1vw 1vh;
 border-radius: 10px;
@@ -154,7 +158,7 @@ margin: 0 0 0;
   text-decoration: underline;
 }
 .latest img {
-  border: solid 2px #fc313f;
+  border: solid 2px var(--clra);
   border-radius: 10px;
   margin: 2vh 0;
 }
@@ -196,7 +200,7 @@ margin: 0 0 0;
 }
 .member {
   display: flex;
-  background-color: #181818;
+  background-color: var(--clrb);
   width: 80%;
   min-width: 75%;
   border-radius: 10px;
@@ -215,7 +219,7 @@ margin: 0 0 0;
   text-align: center;
 }
 .member img {
-  border: solid 1px #fc313f;
+  border: solid 1px var(--clra);
   border-radius: 5px;
   width: 100%;
   height: auto;
@@ -252,7 +256,7 @@ margin: 0 auto 5px;
 }
 /* styles post page */
 .postpage {
-  background-color: #181818;
+  background-color: var(--clrb);
   width: fit-content;
   min-width: 75%;
   display: grid;
@@ -260,13 +264,13 @@ margin: 0 auto 5px;
 }
 .postpage h1 {
   text-align: center;
-  border-bottom: solid 1px #fc313f;
+  border-bottom: solid 1px var(--clra);
 }
 .postpage p {
   font-size: clamp(1.25rem, 2vw, 2rem);
   margin: 2vw 3vh 2vw 3vh;
   padding-bottom: 3vh;
-  border-bottom: solid 1px #fc313f;
+  border-bottom: solid 1px var(--clra);
 }
 .postnav {
   font-size: clamp(1.25rem, 2vw, 2rem);
@@ -280,7 +284,7 @@ margin: 0 auto 5px;
   margin-bottom: 0;
 }
 .archivelink {
-  border-bottom: solid 1px #fc313f;
+  border-bottom: solid 1px var(--clra);
   font-size: clamp(1.25rem, 3vw, 2.5rem);
 }
 .taglist ul {
@@ -288,7 +292,7 @@ margin: 0 auto 5px;
 }
 .taglist li {
   font-size: clamp(1rem, 2vw, 1.5rem);
-  border: 1px solid #ded;
+  border: 1px solid var(--clrd);
   padding: 3px 3px;
   width: fit-content;
   display: inline-flex;
