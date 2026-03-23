@@ -6,7 +6,6 @@ permalink: /archive.html
 stylebb: css/style.css
 ---
 <h1>Tags</h1>
-
 <section class="taglist">
       <ul>
 
@@ -51,10 +50,27 @@ for (let i of tagButtons) {
 for (let i of allTags) {
   const style = document.createElement('style');
   style.textContent = `
-  body.${i} li:has(#${i}) {background-color: green;}
+  body.${i} li:has(#${i}) {background-color: #fc313f; color: #181818;}
+  body.${i} a#${i} {color: #181818;}
   body.${i} .archiveposts li:not(.${i}) {display: none;}
   html body.${i} .archiveposts li.${i} {display: block;}
   `;
   document.head.appendChild(style);
 }
+</script>
+<!-- i dont know if this is the right way to do it but i tried using a click event and it didnt work then this other thing i saw on stack exchange then instead of trying to click since that didnt work i added this bullshit to just like apply the tag the way your js does i think???? this is way above me and part reddit part stackexchange part odingproject -->
+<script>
+  function applyFilterFromHash() {
+  const hash = window.location.hash.replace("#", "");
+  if (!hash) return;
+  const body = document.body;
+  const button = document.getElementById(hash);
+  if (!button) return;
+  document.querySelectorAll(".tagButton").forEach(btn => {
+    body.classList.remove(btn.id);
+  });
+  body.classList.add(hash);
+}
+window.addEventListener("load", applyFilterFromHash);
+window.addEventListener("hashchange", applyFilterFromHash);
 </script>
