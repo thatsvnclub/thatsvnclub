@@ -16,11 +16,21 @@
   <body>
     {% include "partials/nav.html" %}
     <main>
-      <div class="postpage">
+      <article class="postpage">
       {% block content %}
     {{ content | safe }}
     {% endblock %}
-      </div>
+    <center>
+      <ol class="posttags">
+        {% for tag in tags %}
+        {% if tag !== 'post' %}
+        <li>{{ tag }}{% if not loop.last %}, {% endif %}</li>
+        {% endif %}
+        {% endfor %}
+      </ol>
+    </center>
+      <hr />
+      </article>
       <center>
 {% set previousPost = collections.post | getPreviousCollectionItem %}
 {% set nextPost = collections.post | getNextCollectionItem %}

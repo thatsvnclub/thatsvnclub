@@ -275,6 +275,9 @@ margin: 0 auto 5px;
 .postnav {
   font-size: clamp(1.25rem, 2vw, 2rem);
 }
+.posttags li {
+display: inline;
+}
 /* styles archive page */
 .archiveprelink {
   text-align: center;
