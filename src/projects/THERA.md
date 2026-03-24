@@ -1,5 +1,5 @@
 ---
-title: Remembrance
+title: THERA
 author: Kyou System
 imglink: https://img.itch.zone/aW1nLzEzMTQ3NTY3LmdpZg==/original/kqfAAZ.gif
 gamelink: https://kyousystem.itch.io/thera

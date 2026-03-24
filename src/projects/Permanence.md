@@ -1,9 +1,9 @@
 ---
-title: Remembrance
+title: Permanence
 author: Kyou System
-imglink: https://img.itch.zone/aW1nLzIyNjMwNzIucG5n/315x250%23c/4PfnyK.png
-gamelink: https://kyousystem.itch.io/remembrance
-description: A story-focused RPG about trauma and memories of the past.
+imglink: https://img.itch.zone/aW1nLzYzMzY5MDAucG5n/315x250%23c/A8XDrB.png
+gamelink: https://kyousystem.itch.io/permanence
+description: A shattered nightmare of duty, kindness, abandonment, and madness.
 ---
 ## {{ title }}
 ### {{ author }}
