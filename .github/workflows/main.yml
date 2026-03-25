@@ -25,6 +25,6 @@ jobs:
         switches: -avzr --delete
         path: _site/
         remote_path: /var/www/html/
-        remote_host: https://thatsvn.club/
+        remote_host: 159.89.218.57
         remote_user: root
         remote_key: ${{ secrets.THATSVNCLUBSSHPRIVATEKEY }}
