@@ -17,7 +17,11 @@ jobs:
     - name: build
       run: |
         npm install
-        npm run build      
+        npm run build     
+    - name: add known host
+      run: |
+        mkdir -p ~/.ssh
+        ssh-keyscan -H 159.89.218.57 >> ~/.ssh/known_hosts
 
     - name: rsync
       uses: burnett01/rsync-deployments@7.0.1
@@ -25,6 +29,6 @@ jobs:
         switches: -avzr --delete
         path: _site/
         remote_path: /var/www/html/
-        remote_host: https://thatsvn.club/
+        remote_host: 159.89.218.57
         remote_user: root
         remote_key: ${{ secrets.THATSVNCLUBSSHPRIVATEKEY }}
