@@ -1,5 +1,6 @@
 ---
 title: WISHBLEED
+date: 2025-07-03
 author: deaddeaddeath
 imglink: https://www.deaddeaddeath.red/img/WISHBLEED/gameimage.webp
 gamelink: https://www.deaddeaddeath.red/wishbleed.html

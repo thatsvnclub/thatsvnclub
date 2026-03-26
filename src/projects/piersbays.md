@@ -1,5 +1,6 @@
 ---
 title: Of Piers & Bays
+date: 2025-07-13
 author: isahime
 imglink: https://img.itch.zone/aW1nLzIyMTI1MjY2LnBuZw==/315x250%23c/FeOczE.png
 gamelink: https://isahime.itch.io/ofpiersandbays

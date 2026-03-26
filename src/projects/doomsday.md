@@ -1,5 +1,6 @@
 ---
 title: doomsday dreamgirl
+date: 2021-11-30
 author: nadianova
 imglink: https://nadianova.neocities.org/games/icons/doomsday.gif
 gamelink: https://nadianova.itch.io/doomsday-dreamgirl

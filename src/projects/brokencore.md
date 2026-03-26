@@ -1,5 +1,6 @@
 ---
 title: 'BROKEN CORE: sister = doll, a girl story'
+date: 2026-01-12
 author: nadianova
 imglink: https://nadianova.neocities.org/games/icons/brokencore.webp
 gamelink: https://nadianova.neocities.org/brokencore

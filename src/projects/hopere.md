@@ -1,5 +1,6 @@
 ---
 title: 'Hopeless Junction: cuppy dog barf girl and co.'
+date: 2025-10-01
 author: nadianova
 imglink: https://nadianova.neocities.org/games/icons/hopere.webp
 gamelink: https://nadianova.neocities.org/hopelessjunctionremake

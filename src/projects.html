@@ -12,16 +12,3 @@ stylebb: css/style.css
 {% endfor %}
   </ol>
 </section>
-<!-- if i copied this together right it should randomize the projects on page load -->
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const container = document.querySelector(".projlist");
-  if (!container) return;
-  const items = Array.from(container.children);
-  for (let i = items.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [items[i], items[j]] = [items[j], items[i]];
-  }
-  items.forEach(item => container.appendChild(item));
-});
-</script>
