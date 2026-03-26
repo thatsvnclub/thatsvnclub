@@ -17,7 +17,7 @@ jobs:
     - name: build
       run: |
         npm install
-        npm run build     
+        npm run build
     - name: add known host
       run: |
         mkdir -p ~/.ssh
@@ -27,7 +27,7 @@ jobs:
       uses: burnett01/rsync-deployments@7.0.1
       with:
         switches: -avzr --delete
-        path: _site/
+        path: dist/
         remote_path: /var/www/html/
         remote_host: 159.89.218.57
         remote_user: root
