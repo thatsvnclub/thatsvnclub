@@ -7,7 +7,7 @@ description: Two weird queers go on a roadtrip to an abandoned pizza joint
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

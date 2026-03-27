@@ -7,7 +7,7 @@ description: Maybe it should be burnt down. Maybe it's what we deserve.
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

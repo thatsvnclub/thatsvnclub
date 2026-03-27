@@ -206,8 +206,9 @@ margin: 0 0 0;
   width: 75%;
 }
 .whotext p {
-  font-size: clamp(1.25rem, 2vw, 2.25rem);
-  margin-bottom: 2vh;
+  font-size: clamp(1.25rem, 2vw, 2.25rem) !important;
+  margin-top: 0 !important;
+  margin-bottom: 2vh !important;
 }
 .memberblock {
   display: flex;
@@ -280,7 +281,7 @@ main:has(.postpage) {
 .postpage {
   background-color: var(--clrb);
   width: 80%;
-  margin: 5%;
+  margin: 2%;
   font-size: 30px;
 }
 .postpage>h1,
@@ -383,6 +384,9 @@ display: inline;
   border-bottom: none;
   margin-bottom: 0;
 }
+.archiveposts li {
+  list-style-type: none!important;
+}
 .archivelink {
   border-bottom: solid 1px var(--clra);
   font-size: clamp(1.25rem, 3vw, 2.5rem);
@@ -405,6 +409,9 @@ display: inline;
   font-size: clamp(1.5rem, 3vw, 2rem);
 }
 /* styles projects page */
+.centerbg {
+  background-color: var(--clrc);
+}
 .projlist {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -435,19 +442,22 @@ font-size: clamp(1.25rem, 3vw, 2rem);
   text-align: center;
 }
 .projitem h3 {
+font-family: zunka;
 font-size: clamp(1.10rem, 2.5vw, 1.75rem);
 border-bottom: 1px dotted var(--clrd);
 }
 .projitem h4 {
+font-family: atkinson;
 font-size: clamp(1rem, 2vw, 1.50rem);
-font-weight: lighter;
 color: var(--clrd);
-border-bottom: 1px double var(--clrd);
-  -webkit-text-stroke: unset;
-  text-shadow: none;
+border-bottom: 1px double var(--clra);
+margin-bottom: 5px;
+-webkit-text-stroke: unset;
+text-shadow: none;
 }
 .projitem img {
   margin-bottom: 2vh;
+  width: 400px;
 }
 .projbox ol {
   margin: 3vh 1vw;

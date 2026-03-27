@@ -7,7 +7,7 @@ description: PREDATOR x PREY / STARVING x YURI
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

@@ -7,7 +7,7 @@ description: You're not a bad girl. You're just a stupid girl who doesn't know w
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

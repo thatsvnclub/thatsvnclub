@@ -7,7 +7,7 @@ description: A loser vampire girl who would end the world over a pointless crush
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

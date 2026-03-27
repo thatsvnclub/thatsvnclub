@@ -7,7 +7,7 @@ description: im a boy. im a corpse. im a girl. im a doll. snowromancy.
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

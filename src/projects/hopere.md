@@ -7,7 +7,7 @@ description: REMAKE of a kinetic vn about a bunch of tgirls on a week-long journ
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

@@ -7,7 +7,7 @@ description: Gumitotchi is a brand of handheld digital pets marketed since 199x 
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

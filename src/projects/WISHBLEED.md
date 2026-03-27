@@ -7,7 +7,7 @@ description: HYSTERICAL LONGING FOR THE AFFECTION OF OTHERS
 filetype: webp
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

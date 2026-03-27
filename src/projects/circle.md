@@ -7,7 +7,7 @@ description: Only files remain. Trace your fingers around the circle carefully.
 filetype: gif
 ---
 ## {{ title }}
-### {{ author }}
 #### {{ date | postDate }}
+### {{ author }}
 ![{{ title }}](img/projimage/{{ title | removeslashes | makeuri }}.{{ filetype }})
 {{ description }}

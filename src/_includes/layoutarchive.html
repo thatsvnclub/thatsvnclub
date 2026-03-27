@@ -1,0 +1,36 @@
+<!doctype html>
+<!-- uncomment lines 6 and 11 and change to hte vnclub logo when ready -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta property="og:image" content="/img/{{ title }}/gameimage.webp"/> -->
+    <meta property="og:site_name" content="thatsvnclub"/>
+    <meta property="og:description" content="{{ description }}"/>
+    <meta name="description" content="{{ description }}"/>
+    <title>{{ title }}</title>
+    <!-- <link rel="icon" type="image/x-icon" href="img/fav.gif"> -->
+    <link rel="stylesheet" href="{{ stylebb }}?v=0.4" type="text/css">
+  </head>
+  <body>
+    {% include "partials/nav.html" %}
+    <main>
+      <article class="postpage">
+      {% block content %}
+    {{ content | safe }}
+    {% endblock %}
+    <center class="centerline">
+      <ol class="posttags">
+        {% for tag in tags %}
+        {% if tag !== 'post' %}
+        <li><a href="archive.html#{{ tag }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}</li>
+        {% endif %}
+        {% endfor %}
+      </ol>
+    </center>
+      <hr />
+      </article>
+    </main>
+  </body>
+</html>
