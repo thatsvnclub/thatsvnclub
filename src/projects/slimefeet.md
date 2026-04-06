@@ -1,7 +1,7 @@
 ---
 title: slime feet
 date: 2024-11-25
-author: nadianova
+author: nadia nova
 gamelink: https://nadianova.neocities.org/slimefeet
 description: terminal faggot cybersex slime style
 filetype: webp

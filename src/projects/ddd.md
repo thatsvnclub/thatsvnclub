@@ -1,7 +1,7 @@
 ---
 title: Divine Despair Deviance
 date: 2024-06-30
-author: nadianova
+author: nadia nova
 gamelink: https://nadianova.neocities.org/divinedespairdeviance
 description: Is this how Angel's lose their halos?
 filetype: webp
