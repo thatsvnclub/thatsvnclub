@@ -4,7 +4,7 @@ date: 2023-05-13
 author: KILLJILL
 gamelink: https://killjill.itch.io/memento-in-marrow
 description: A morbid visual novel about a girl's strange wish for permanence.
-filetype: webp
+filetype: png
 ---
 ## {{ title }}
 #### {{ date | postDate }}

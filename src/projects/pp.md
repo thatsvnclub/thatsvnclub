@@ -4,7 +4,7 @@ date: 2024-11-12
 author: nadia nova, isahime
 gamelink: https://isahime.itch.io/pp
 description: gonna piss your pants? maybe cry and cum?
-filetype: webp
+filetype: png
 ---
 ## {{ title }}
 #### {{ date | postDate }}

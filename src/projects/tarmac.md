@@ -4,7 +4,7 @@ date: 2023-07-06
 author: Lunaticker
 gamelink: https://lunaticker.itch.io/red-red-tarmac
 description: Two weird queers go on a roadtrip to an abandoned pizza joint
-filetype: webp
+filetype: png
 ---
 ## {{ title }}
 #### {{ date | postDate }}

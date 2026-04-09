@@ -4,7 +4,7 @@ date: 2024-06-30
 author: kate bagenzo
 gamelink: https://bagenzo.itch.io/paper-girl-chain
 description: playing favorites
-filetype: webp
+filetype: gif
 ---
 ## {{ title }}
 #### {{ date | postDate }}
