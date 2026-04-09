@@ -1,7 +1,7 @@
 ---
 title: can you say my name again
 date: 2017-10-31
-author: nadianova
+author: nadia nova
 gamelink: https://nadianova.itch.io/can-you-say-my-name-again
 description: two lesbian trans girls end up living together...
 filetype: webp
