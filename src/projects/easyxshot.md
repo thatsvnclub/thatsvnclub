@@ -4,7 +4,7 @@ date: 2024-11-29
 author: KILLJILL
 gamelink: https://killjill.itch.io/easyxshot
 description: A bullet for love.
-filetype: webp
+filetype: png
 ---
 ## {{ title }}
 #### {{ date | postDate }}

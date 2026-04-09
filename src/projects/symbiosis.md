@@ -4,7 +4,7 @@ author: Lunaticker
 date: 2025-07-14
 gamelink: https://lunaticker.itch.io/girls-symbiosis
 description: PREDATOR x PREY / STARVING x YURI
-filetype: webp
+filetype: png
 ---
 ## {{ title }}
 #### {{ date | postDate }}

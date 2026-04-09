@@ -4,7 +4,7 @@ date: 2025-11-22
 author: Lunaticker
 gamelink: https://lunaticker.itch.io/passenger-x-princess
 description: This can only end one way
-filetype: webp
+filetype: png
 ---
 ## {{ title }}
 #### {{ date | postDate }}
