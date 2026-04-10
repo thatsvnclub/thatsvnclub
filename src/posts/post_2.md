@@ -1,12 +1,7 @@
 ---
-layout: layoutpost.html
-stylebb: css/style.css
-title: TOXIC YURI VN JAM 2
-tags:
-  - nadianova
-  - gamejam
+title: "TOXIC YURI VN JAM 2"
+tags: ["nadianova", "gamejam"]
 description: announcement. not starting yet. hold your horses
-permalink: /{{ title | slugify }}.html
 ---
 # TOXIC YURI VN JAM 2
 
