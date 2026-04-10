@@ -1,6 +1,7 @@
 ---
 title: "TOXIC YURI VN JAM 2"
 tags: ["nadianova", "gamejam"]
+date: 2026-04-09
 description: announcement. not starting yet. hold your horses
 ---
 # TOXIC YURI VN JAM 2
