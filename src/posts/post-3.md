@@ -36,5 +36,5 @@ hop on bitch i genuinely believe anyone passionate enough about creating can mak
 
 and while youre here fuckign SLAM that [jam sign up button](https://itch.io/jam/toxic-yuri-vn-jam-2) and join our [FLUXER server](https://fluxer.gg/ebku1SId). if youre having problems joining because of dumb region blocking shit use a vpn
 
-thats that. keyboard maid out
+thats that. be gay do crime. keyboard maid out
 
