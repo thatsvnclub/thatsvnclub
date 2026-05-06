@@ -2,6 +2,7 @@
 layout: layoutpost.html
 stylebb: css/style.css
 title: why i think anyone can make a visual novel
+date: 2026-05-06
 tags:
   - nadianova
   - gamejam

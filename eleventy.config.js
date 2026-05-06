@@ -30,12 +30,13 @@ export default function (eleventyConfig) {
 	return newTags.join(" ");
   });
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    // Can use toLocaleString the same way we were before
-    return dateObj.toLocaleString(undefined, {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    });
+    if (dateObj) {
+      return dateObj.toLocaleString(undefined, {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      });
+    }
   });
 eleventyConfig.addFilter('sortObjectByKey', (collection) => {
   const entries = Object.entries(collection);
