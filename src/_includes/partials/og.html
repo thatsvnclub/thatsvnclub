@@ -1,0 +1,14 @@
+<meta property="og:site_name" content="that's vn club!"/>
+<meta property="og:title" content="{{ title }}"/>
+<meta property="og:description" content="{{ description }}"/>
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="that's vn club!" />
+<meta name="twitter:title" content="{{ description }}" />
+<meta name="twitter:description" content="{{ title }}" />
+{% if postcard %}
+<meta property="og:image" content="{{ postcard | postcardFilter }}"/>
+<meta name="twitter:image" content="{{ postcard | postcardFilter }}" />
+{% else %}
+<meta property="og:image" content="https://thatsvn.club/img/social.png"/>
+<meta name="twitter:image" content="https://thatsvn.club/img/social.png" />
+{% endif %}

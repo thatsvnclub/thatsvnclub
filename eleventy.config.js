@@ -54,6 +54,9 @@ eleventyConfig.addFilter('makeuri',function (value) {
     if (typeof value !== "string") return value;
     return value.replace(/[\/.:]/g, '');
   });
+  eleventyConfig.addFilter("postcardFilter", function(value) {
+    return `https://thatsvn.club/img/${value}`;
+  });
 // eleventyConfig.addFilter('removeslashes', function(value) {
 //   if (typeof value !== 'string') return value;
 //   return encodeURI(value.replace(/[\/.:]/g, ''));
