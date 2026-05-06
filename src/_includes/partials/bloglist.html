@@ -4,7 +4,7 @@
   <hr />
   <section class="posts">
 {% for post in collections.post | reverse | itemLimit(5) %}
-<div class="postprelink"><p><span class="postdate">{{ post.date | postDate}}</span></div><div class="postlink"><a href="{{ post.url }}" class="blogpost">{{ post.data.title }}<span id="postsep"> - </span>{{ post.data.description }}...</a></p></div>
+<div class="postprelink"><p><span class="postdate">{{ post.data.date | postDate}}</span></div><div class="postlink"><a href="{{ post.url }}" class="blogpost">{{ post.data.title }}<span id="postsep"> - </span>{{ post.data.description }}...</a></p></div>
 {% endfor %}
   </section>
   <section class="archiverss">

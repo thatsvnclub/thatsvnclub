@@ -1,9 +1,10 @@
 ---
 title: "that's vn club!"
+date: 2026-04-03
 tags: ["nadianova", "thursday"]
 description: Now we're fucking cooking baby
 ---
-# {{ page.date | postDate}} - who's that? that's vn club!
+# {{ date | postDate}} - who's that? that's vn club!
 oh i have the microphone now. oh okay. well hello its me. im a little keyboard maid. nadia nova. hii. hi hiii. im a pervert and i cant stop thinking about putting cute girls into situations that is my right as an artist. when i lock in i wear my uniform and put on my puppy ears and tail. it raises my art skill by +200%
 
 in my quest to subject the world to my bullshit i have come up with the ultimate solution of creating a feedback loop of encouraging me, myself, and apparently even others to make even cooler shit: making friends with likeminded people. hosting jams is fun and awesome, and collabing and sharing your brain babies with people you click with only makes it better
