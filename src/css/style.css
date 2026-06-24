@@ -291,7 +291,7 @@ main:has(.postpage) {
 
 @media screen and (min-width: 500px) {
   .postpage {
-    max-width: 60%;
+    max-width: min(60%, 1200px);
     padding-left: 1rem;
     padding-right: 1rem;
   }
