@@ -288,6 +288,14 @@ main:has(.postpage) {
   margin: 2%;
   font-size: 30px;
 }
+
+@media screen and (min-width: 500px) {
+  .postpage {
+    max-width: 60%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 .postpage>h1,
 .postpage>h2,
 .postpage>h3,
