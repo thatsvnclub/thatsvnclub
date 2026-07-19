@@ -3,7 +3,7 @@ title: She Couldn't Do Anything
 date: 2026-05-02
 author: Kyou System
 gamelink: https://kyousystem.itch.io/she-couldnt-do-anything
-description: Nothing is going Ann's way.
+description: No choices remain except bad ones.
 filetype: webp
 ---
 ## {{ title }}

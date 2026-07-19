@@ -1,7 +1,7 @@
 ---
 title: kitten milk replacer
 date: 2023-07-17
-author: kate bagenzo
+author: bagenzo, fotocopiadora
 gamelink: https://middle-sea-software.itch.io/kitten-milk-replacer
 description: knight's dream
 filetype: webp

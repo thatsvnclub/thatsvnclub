@@ -3,7 +3,7 @@ title: Shortstop by the Sea
 date: 2026-07-13
 author: KILLJILL
 gamelink: https://killjill.itch.io/shortstop-by-the-sea
-description: Baseball is about waiting for something to happen.
+description: Baseball is pointless
 filetype: webp
 ---
 ## {{ title }}

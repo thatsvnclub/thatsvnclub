@@ -3,7 +3,7 @@ title: Celestial Counterfeiter
 date: 2026-07-12
 author: isahime, gutterbride
 gamelink: https://isahime.itch.io/celestial-counterfeiter
-description: THOUSANDS OF PEOPLE OVER THOUSANDS OF YEARS HAVE TOILED FOR THIS MOMENT. BUT IT IS NOT RIGHT COMING FROM YOUR HANDS.
+description: The stars read the fate of this world. You are not part of their forecast.
 filetype: webp
 ---
 ## {{ title }}
